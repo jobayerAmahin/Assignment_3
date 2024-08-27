@@ -12,8 +12,125 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <script>
+        
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                navText: 'rgb(115, 115, 115)',
+                navTextHome:'rgb(73, 73, 73)',
+                navBut:'rgb(171, 239, 95)',
+                backG:'rgb(244, 244, 244)',
+              },
+              fontFamily:{
+                Poppins: 'Poppins',
+              }
+            }
+          }
+        }
+    
+    </script>
+
 </head>
 <body>
+    <header>
+        <nav class="w-11/12 mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <!-- <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </div> -->
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a class="text-lg ">Home</a></li>
+                      <li><a class="text-lg ">Service</a></li>
+                      <li><a class="text-lg ">Portfolio</a></li>
+                      <li><a class="text-lg ">Blog</a></li>
+                      <li><a class="text-lg ">Contact Us</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-arrow-up-long"></i>
+                    <a class="text-4xl">Reinterio</a>
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-lg ">Home</a></li>
+                    <li><a class="text-lg ">Service</a></li>
+                    <li><a class="text-lg ">Portfolio</a></li>
+                    <li><a class="text-lg ">Blog</a></li>
+                    <li><a class="text-lg ">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <button class="btn-lg bg-lime-600">Book Consult</button>
+                </div>
+              </div>
+        </nav>
+
+        <div class="flex flex-col items-center gap-6 px-7">
+            <img src="./assets/banner.png" alt="">
+            <h1 class="text-6xl font-bold text-center">A barn house of this design has a striking appearance</h1>
+            <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <div>
+                <button class="btn bg-lime-600">
+                    View Details
+                    <i class="fa-solid fa-arrow-up-long"></i>
+                  </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="bg-backG">
+            <img class="absolute object-left-top" src="./assets/Vector.png" alt="">
+            <div class="py-10 px-12 lg:flex">
+                <div>
+                    <div>
+                        <button class="btn">
+                            <i class="fa-solid fa-arrow-right"></i>
+                            About Us
+                          </button>
+                    </div>
+                    <h2 class="text-5xl font-bold">We design thoughtful, liveable spaces</h2>
+                    <p>The barn house captivates with its blend of rustic charm and 
+                        modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    <div>
+                        <div class="card card-side bg-base-100 shadow-xl">
+                            <figure>
+                              <img
+                                src="./assets/commercial.png"
+                                alt="Movie" />
+                            </figure>
+                            <div class="card-body">
+                              <h2 class="card-title">Commercial</h2>
+                              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div>
+                        <div class="card card-side bg-base-100 shadow-xl">
+                            <figure>
+                              <img
+                                src="./assets/residential.png"
+                                alt="Movie" />
+                            </figure>
+                            <div class="card-body">
+                              <h2 class="card-title">Residential</h2>
+                              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <img src="./assets/Rectangle.png" alt="">
+            </div>
+        </div>
+    </main>
+
     
 </body>
 </html>
