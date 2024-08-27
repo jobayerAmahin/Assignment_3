@@ -22,6 +22,10 @@
                 navTextHome:'rgb(73, 73, 73)',
                 navBut:'rgb(171, 239, 95)',
                 backG:'rgb(244, 244, 244)',
+                card1:'rgb(231, 193, 211)',
+                card2:'rgb(239, 218, 110)',
+                card3:'rgb(164, 218, 195)',
+                card4:'rgb(119, 170, 234)',
               },
               fontFamily:{
                 Poppins: 'Poppins',
@@ -86,10 +90,10 @@
     </header>
 
     <main>
-        <div class="bg-backG">
+        <div class="bg-backG my-5">
             <img class="absolute object-left-top" src="./assets/Vector.png" alt="">
-            <div class="py-10 px-12 lg:flex">
-                <div>
+            <div class="py-10 px-12 lg:flex gap-6">
+                <div class="flex flex-col gap-6">
                     <div>
                         <button class="btn">
                             <i class="fa-solid fa-arrow-right"></i>
@@ -100,7 +104,7 @@
                     <p>The barn house captivates with its blend of rustic charm and 
                         modern sophistication, featuring weathered wood, sleek metal accents.</p>
                     <div>
-                        <div class="card card-side bg-base-100 shadow-xl">
+                        <div class="card card-side bg-base-100 shadow-xl px-7">
                             <figure>
                               <img
                                 src="./assets/commercial.png"
@@ -108,12 +112,12 @@
                             </figure>
                             <div class="card-body">
                               <h2 class="card-title">Commercial</h2>
-                              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                              <p>The barn house captivates with <br>its blend of rustic charm and modern.</p>
                             </div>
                           </div>
                     </div>
                     <div>
-                        <div class="card card-side bg-base-100 shadow-xl">
+                        <div class="card card-side bg-base-100 shadow-xl px-7">
                             <figure>
                               <img
                                 src="./assets/residential.png"
@@ -121,12 +125,96 @@
                             </figure>
                             <div class="card-body">
                               <h2 class="card-title">Residential</h2>
-                              <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                              <p>The barn house captivates with <br>its blend of rustic charm and modern.</p>
                             </div>
                           </div>
                     </div>
                 </div>
                 <img src="./assets/Rectangle.png" alt="">
+            </div>
+        </div>
+
+        <div class="bg-backG px-12 lg:flex flex-col items-center gap-6">
+            <div>
+                <button class="btn bg-base-100 my-5">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    How We Works
+                  </button>
+            </div>
+            <h1 class="text-5xl font-bold">Our Work Process</h1>
+            <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            <div class="lg:flex gap-6">
+                <div class="card bg-card1 w-70 shadow-xl my-5">
+                    <figure>
+                      <img
+                        src="./assets/concept.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title font-bold">Concept</h2>
+                      <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-card2 w-70 shadow-xl my-5">
+                    <figure>
+                      <img
+                        src="./assets/flow-chart.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title font-bold">Design Process</h2>
+                      <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-card3 w-70 shadow-xl my-5">
+                    <figure>
+                      <img
+                        src="./assets/vision.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title font-bold">Supervision</h2>
+                      <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                </div>
+
+                <div class="card bg-card4 w-70 shadow-xl my-5">
+                    <figure>
+                      <img
+                        src="./assets/budget-planning.png"
+                        alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                      <h2 class="card-title font-bold">Budget Planning</h2>
+                      <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-[url('/assets/bg.jpg')]">
+            <div>
+                <button class="btn bg-base-100 my-5 rounded">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    Let's Connect
+                  </button>
+            </div>
+            <h2 class="text-5xl font-bold">Let’s Discuss Next Project</h2>
+            <p>The barn house captivates with its blend of rustic charm and modern, featuring weathered wood, steel, metal.</p>
+            <div class="grid grid-cols-2 gap-6">
+                <input type="text" placeholder="First Name*">
+                <input type="text" placeholder="Last Name*">
+                <input type="text" placeholder="Phone Number*">
+                <input type="text" placeholder="Email Number*">
+                <textarea name="" id="" placeholder="Write your message here" class="col-span-2"></textarea>
+                <div>
+                    <button class="btn rounded-2xl">
+                        Button
+                        <i class="fa-solid fa-arrow-up-long"></i>
+                      </button>
+                </div>
             </div>
         </div>
     </main>
