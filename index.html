@@ -26,6 +26,7 @@
                 card2:'rgb(239, 218, 110)',
                 card3:'rgb(164, 218, 195)',
                 card4:'rgb(119, 170, 234)',
+                footT: 'rgb(233,233,233)',
               },
               fontFamily:{
                 Poppins: 'Poppins',
@@ -71,7 +72,7 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <button class="btn-lg bg-lime-600">Book Consult</button>
+                  <button class="btn-lg bg-lime-600 rounded-full">Book Consult</button>
                 </div>
               </div>
         </nav>
@@ -194,7 +195,7 @@
             </div>
         </div>
 
-        <div class="bg-[url('/assets/bg.jpg')]">
+        <div class="bg-[url('/assets/bg.jpg')] bg-cover bg-no-repeat px-20 lg:flex flex-col gap-6 items-center">
             <div>
                 <button class="btn bg-base-100 my-5 rounded">
                     <i class="fa-solid fa-arrow-right"></i>
@@ -203,21 +204,40 @@
             </div>
             <h2 class="text-5xl font-bold">Let’s Discuss Next Project</h2>
             <p>The barn house captivates with its blend of rustic charm and modern, featuring weathered wood, steel, metal.</p>
-            <div class="grid grid-cols-2 gap-6">
-                <input type="text" placeholder="First Name*">
-                <input type="text" placeholder="Last Name*">
-                <input type="text" placeholder="Phone Number*">
-                <input type="text" placeholder="Email Number*">
-                <textarea name="" id="" placeholder="Write your message here" class="col-span-2"></textarea>
+            <div class="flex flex-col items-center gap-3 lg:grid grid-cols-2 gap-6">
+                <input type="text" placeholder="First Name*" class="rounded-full px-2">
+                <input type="text" placeholder="Last Name*" class="rounded-full px-2">
+                <input type="text" placeholder="Phone Number*" class="rounded-full px-2">
+                <input type="text" placeholder="Email Number*" class="rounded-full px-2">
+                <textarea name="" id="" placeholder="Write your message here" class="col-span-2 rounded px-2 row-span-6"></textarea>
                 <div>
-                    <button class="btn rounded-2xl">
-                        Button
+                    <button class="flex items-center rounded-2xl col-span-2 bg-green text-center my-5">
+                        Send Mail
                         <i class="fa-solid fa-arrow-up-long"></i>
                       </button>
                 </div>
             </div>
         </div>
     </main>
+
+    <footer class="bg-black flex flex-col items-center gap-6 py-10 px-12">
+        <div class="text-white">
+            <i class="fa-solid fa-arrow-up-long"></i>
+            <a class="text-4xl">Reinterio</a>
+        </div>
+
+        <p class="text-navText">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+        <div class="lg:flex">
+            <ul class="flex flex-col gap-3 lg:flex-row gap-9 text-gray">
+              <li><a class="text-lg text-footT">Home</a></li>
+              <li><a class="text-lg text-footT">Service</a></li>
+              <li><a class="text-lg text-footT">Portfolio</a></li>
+              <li><a class="text-lg text-footT">Blog</a></li>
+              <li><a class="text-lg text-footT">Contact Us</a></li>
+            </ul>
+        </div>
+        <button class="btn-lg bg-lime-600 rounded-full">Book Consult</button>
+    </footer>
 
     
 </body>
